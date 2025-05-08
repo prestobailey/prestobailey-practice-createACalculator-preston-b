@@ -28,7 +28,7 @@ function roundToDecimals(number, decimals) {
     return Number(number.toFixed(decimals));
     }
 
-// Sample Tests
+// Console Logs
 console.log("Absolute value of -45.67:", getAbsoluteValue(-45.67));
 console.log("5 raised to the power of 3:", calculatePower(5, 3));
 console.log("Square root of 144:", findSquareRoot(144));
@@ -40,25 +40,3 @@ console.log("Random number between 1 and 50:", generateRandom(1,
 50));
 console.log("Round 23.67891 to 2 decimal places:",
 roundToDecimals(23.67891, 2));
-
-function calculator() {
-    const choice = prompt(
-      "Select an operation:\n" +
-      "1 - Absolute Value\n" +
-      "2 - Power Calculation\n" +
-      "3 - Square Root\n" +
-      "4 - Max and Min Finder\n" +
-      "5 - Random Number Generator\n" +
-      "6 - Custom Rounding"
-    );
-  
-    switch (choice) {
-      case "1":
-        const absInput = parseFloat(prompt("Enter a number:"));
-        alert("Absolute Value: " + absoluteValue(absInput));
-        break;
-  
-    }
-  }
-  
-  // calculator();
